@@ -2,7 +2,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   height: 100vh;
   margin: 0;
   background-color: #f0f0f0;
@@ -11,6 +11,7 @@ body {
 .stopwatch {
   text-align: center;
   padding: 2rem;
+  margin-top: 200px;
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -35,4 +36,19 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+#resetBtn {
+  background-color: red;
+}
+
+.lap-times {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.lap-time {
+  margin: 1rem 0.5rem;
 }
