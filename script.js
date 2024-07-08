@@ -23,6 +23,9 @@ function updateLapTimes() {
     lapTimeElement.textContent = `Lap ${index + 1}: ${formatTime(time)}`;
     lapTimesElement.appendChild(lapTimeElement);
   });
+
+  const lapTimesContainer = document.getElementById("lapTimesContainer");
+  lapTimesContainer.style.display = lapTimes.length > 0 ? "block" : "none";
 }
 
 document.getElementById("startBtn").addEventListener("click", () => {
