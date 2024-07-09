@@ -74,10 +74,57 @@ button:hover {
 
 .lap-times {
   font-size: 1.2rem;
-  max-height: 400px;
+  max-height: 30vh;
+
   overflow-y: auto;
 }
 
 .lap-time {
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0px;
+  }
+  .stopwatch {
+    width: 80%;
+    display: flex;
+    margin: 30px auto;
+
+    flex-direction: column;
+  }
+
+  .time {
+    font-size: 3rem;
+  }
+  .controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  button {
+    width: 30%;
+    padding: 20px 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .stopwatch {
+    width: 60%;
+    margin: 15px auto;
+  }
+  .controls {
+    margin: 0px;
+  }
+  .time {
+    font-size: 1.8em;
+  }
+  button {
+    width: 60%;
+    padding: 10px 30px;
+    margin: 15px;
+  }
 }
